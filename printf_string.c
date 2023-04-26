@@ -14,5 +14,5 @@ int printf_string(va_list args, int display)
 			i++;
 		}
 	}
-	return (i - 1);
+	return (i);
 }
