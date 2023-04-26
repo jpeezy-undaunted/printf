@@ -5,7 +5,7 @@
  * Return: the formated string
  */
 
-int _printf(const char *format, ...);
+int _printf(const char *format, ...)
 {
 	int display = 0;
 	va_list args;
