@@ -42,3 +42,4 @@ int printf_integer(va_list args, int display)
 		digits--;
 	}
 	return (display);
+}
