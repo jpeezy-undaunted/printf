@@ -2,7 +2,7 @@
 
 int printf_string(va_list args, int display)
 {
-	int i = 0;
+	int i = display;
 	char *buff;
 
 	buff = va_arg(args, char*);
