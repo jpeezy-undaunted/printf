@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _printf -Inbuilt printf to be implemented
  * @format: the format specifier
@@ -17,7 +18,7 @@ int _printf(const char *format, ...)
 		if (*format == '%')
 		{
 			format++;
-			display = selector(format, args, display);
+			display += selector(format, args);
 			format++;
 		}
 		else
