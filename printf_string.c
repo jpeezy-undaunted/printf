@@ -6,13 +6,12 @@ int printf_string(va_list args, int display)
 	char *buff;
 
 	buff = va_arg(args, char*);
-	if (buff)
+	if (!buff)
+		return (0);
+	while (buff[i])
 	{
-		while (buff[i])
-		{
-			_putchar(buff[i]);
-			i++;
-		}
+		_putchar(buff[i]);
+		i++;
 	}
 	return (i);
 }
